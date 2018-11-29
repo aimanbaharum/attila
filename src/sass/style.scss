@@ -219,8 +219,8 @@ mark {
 code, tt {
 	position: relative;
 	margin: 0 0.334em;
-	padding: 0.334em 0.667em;
-	font-family: monospace, sans-serif;
+	padding: 0.334em;
+	font-family: 'Hack', monospace, sans-serif;
 	font-size: 0.75em;
 	white-space: pre;
 	background: $color-gray-98;
@@ -883,7 +883,7 @@ img[src$="#full"] {
 	position: relative;
 }
 .container .post {
-	padding: 1em 0;
+	padding: 2em 0 0 0;
 }
 .container .post:after {
 	position: absolute;

@@ -1,6 +1,6 @@
 # Attila (Modified)
 
-> Please pull `knowledge-log` branch for modified
+> Please pull `knowledge-log` branch for modified  
 > See blog.aimanbaharum.com for modified theme
 
 A content focused responsive theme for [Ghost](http://github.com/tryghost/ghost/).
