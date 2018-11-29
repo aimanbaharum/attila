@@ -34,7 +34,7 @@ html.menu-active,
 }
 
 body {
-	font: 400 2em / 1.3em 'Ubuntu Mono', serif;
+	font: 400 1.7em / 1.5em 'Hack', serif;
 	color: $color-blue-30;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -45,7 +45,7 @@ input,
 button,
 select,
 textarea {
-	font-family: 'Ubuntu Mono', sans-serif;
+	font-family: 'Hack', sans-serif;
 	transition: all ease-out 0.2s;
 }
 
@@ -61,7 +61,7 @@ a:focus {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Ubuntu Mono', sans-serif;
+	font-family: 'Hack', sans-serif;
 	text-rendering: optimizeLegibility;
 	color: $color-black;
 }
@@ -70,26 +70,26 @@ h1 {
 	font-size: 2em;
 	line-height: 1em;
 	text-indent: -1px;
-	margin: 2em 0 -0.5em;
+	margin: 1em 0 1em;
 }
 
 h2 {
 	font-size: 1.75em;
 	line-height: 1.111em;
 	text-indent: -1px;
-	margin: 2.286em 0 -0.571em;
+	margin: 1.143em 0 1.143em;
 }
 
 h3 {
 	font-size: 1.5em;
 	line-height: 1.334em;
-	margin: 2em 0 -0.667em;
+	margin: 1em 0 1em;
 }
 
 h4 {
 	font-size: 1.25em;
 	line-height: 1.2em;
-	margin: 2.4em 0 -0.8em;
+	margin: 1.2em 0 1.2em;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -97,12 +97,13 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 p {
-    margin: 2em 0;
+    margin: 0 0 2em;
 }
 
 ul, ol {
-    margin: 2em 0;
-    padding-left: 30px;
+    margin: 0 0 2em;
+    padding-left: 2em;
+    box-sizing: border-box;
 }
 
 ul {
@@ -116,7 +117,7 @@ ol > li:before {
 	position: absolute;
 	width: 1.5em;
 	margin-left: -2em;
-	font-family: 'Ubuntu Mono', sans-serif;
+	font-family: 'Hack', sans-serif;
 	font-size: 1em;
 	font-weight: 500;
 	line-height: 1.5em;
@@ -144,14 +145,14 @@ ol ol, ul ul, ul ol, ol ul {
 hr {
     display: block;
     height: 1px;
-    margin: 2em 0;
+    margin: 0 0 2em;
     padding: 0;
-	background: $color-gray-90;
+	  background: $color-gray-90;
     border: 0;
 }
 
 blockquote {
-    margin: 2em auto;
+    margin: 0 0 2em;
     padding: 1em;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -162,7 +163,7 @@ blockquote {
     background: $color-gray-98;
 }
 blockquote p {
-	margin: 1em auto;
+	margin: 0 0 1em;
 }
 blockquote p:first-child {
 	margin-top: 0;
@@ -186,11 +187,11 @@ small {
 
 
 dl {
-    margin: 2em 0;
+    margin: 0 0 2em;
     padding-left: 30px;
 }
 dl dt {
-    font-family: 'Ubuntu Mono', sans-serif;
+    font-family: 'Hack', sans-serif;
   	font-weight: 500;
   	font-size: 0.75em;
   	line-height: 1.25em;
@@ -218,24 +219,24 @@ mark {
 code, tt {
 	position: relative;
 	margin: 0 0.334em;
-	padding: 0.334em 0.667em;
-	font-family: 'Inconsolata', monospace, sans-serif;
+	padding: 0.334em;
+	font-family: 'Hack', monospace, sans-serif;
 	font-size: 0.75em;
 	white-space: pre;
 	background: $color-gray-98;
-    border: 1px solid $color-gray-90;
+  border: 1px solid $color-gray-90;
 	top: -2px;
 }
 
 pre {
 	position: relative;
-	margin: 2em auto;
+	margin: 0 0 2em;
 	padding: 1em;
 	overflow: hidden;
-	font-family: 'Inconsolata', monospace, sans-serif;
+	font-family: monospace, sans-serif;
 	white-space: pre;
 	background: $color-gray-98;
-    border: 1px solid $color-gray-90;
+  border: 1px solid $color-gray-90;
 	box-sizing: border-box;
 }
 pre .lines {
@@ -259,17 +260,23 @@ pre .lines .line {
 }
 
 pre code, pre tt {
+  display: block;
 	position: static;
 	top: auto;
 	margin: -1.334em -1.334em -1.334em 1.334em;
 	padding: 1.334em;
-	overflow: scroll;
+  overflow-x: auto;
 	font-size: 0.75em;
 	line-height: 2em;
 	white-space: pre;
 	background: transparent;
 	border: none;
 	vertical-align: inherit;
+}
+pre code.language-text {
+  overflow: hidden;
+  white-space: normal;
+  margin-left: -1.334em;
 }
 
 kbd {
@@ -289,7 +296,7 @@ kbd {
 table {
 	width: 100%;
 	max-width: 100%;
-	margin: 2em 0;
+	margin: 0 0 2em;
 	background-color: transparent;
 	border: 1px solid $color-gray-90;
 }
@@ -303,7 +310,7 @@ table td {
     border: 1px solid $color-gray-90;
 }
 table th {
-	font-family: 'Ubuntu Mono', sans-serif;
+	font-family: 'Hack', sans-serif;
 	font-weight: 500;
 	font-size: 0.75em;
 	line-height: 1.25em;
@@ -327,10 +334,62 @@ img {
 	display: block;
 	max-width: 100%;
 	height: auto;
-	margin: 2.5em auto;
+	margin: 0 0 2em;
 }
+
+img[src$="#full"] {
+  max-width: none;
+  width: 100vw;
+  margin: 3em 0;
+}
+
+.kg-image-card {
+  margin: 0 0 2em;
+  max-width: none !important;
+
+  &.kg-width-wide {
+    max-width: 48em;
+    min-width: 100%;
+    width: 75vw;
+  }
+
+  &.kg-width-full {
+    max-width: none;
+    width: 100vw;
+    margin-top: 2em;
+  }
+
+  .kg-image {
+    margin: 0 auto;
+  }
+
+  figcaption {
+    font-family: 'Fira Sans', sans-serif;
+    color: $color-blue-60;
+    text-align: center;
+    max-width: 32em;
+    margin: auto;
+  	font-size: 0.75em;
+  	line-height: 1.25em;
+  	padding: 0.667em 0;
+  }
+
+  .kg-image-full + figcaption {
+    margin-bottom: 1.334em;
+  }
+}
+
+.kg-embed-card {
+  margin: 0 0 2em;
+
+  > * {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .fluid-width-video-wrapper {
-	margin: 2.5em auto;
+	margin: 0 0 2em;
 }
 
 .clear {
@@ -458,7 +517,7 @@ img {
 	z-index: 10;
 	margin: 0;
 	padding: 0;
-	font-family: 'Ubuntu Mono', sans-serif;
+	font-family: 'Hack', sans-serif;
 	font-weight: 700;
 	font-size: 2em;
 	line-height: 1em;
@@ -514,7 +573,7 @@ img {
 
 
 .inner {
-	max-width: 40em;
+	max-width: 45em;
 	margin: 0 auto;
 	padding: 0 2em;
 }
@@ -542,7 +601,7 @@ img {
 	margin-bottom: 1em;
 	padding: 0.5em 1.25em;
 	border: 1px solid $color-blue-80;
-	font-family: 'Ubuntu Mono', sans-serif;
+	font-family: 'Hack', sans-serif;
 	font-size: 0.75em;
 	line-height: 1.667em;
 	text-shadow: none;
@@ -591,7 +650,7 @@ img {
 	border-left: 1px solid $color-gray-90;
 	z-index: 400;
 	overflow: hidden;
-	font-family: 'Ubuntu Mono', sans-serif;
+	font-family: 'Hack', sans-serif;
 	box-shadow: inset -2px 0 7px rgba(0,0,0,0.1);
 	transform: translate3d(16em,0,0);
 	transition: all ease-out 0.25s;
@@ -747,7 +806,7 @@ img {
 #footer {
 	position: relative;
 	z-index: 20;
-	font-family: 'Ubuntu Mono', sans-serif;
+	font-family: 'Hack', sans-serif;
 	line-height: 1em;
 	padding-bottom: 6em;
 }
@@ -824,7 +883,7 @@ img {
 	position: relative;
 }
 .container .post {
-	padding: 1em 0;
+	padding: 2em 0 0 0;
 }
 .container .post:after {
 	position: absolute;
@@ -932,11 +991,11 @@ img {
 	z-index: 10;
 	display: block;
 	margin-bottom: 1.334em;
-	font-family: 'Ubuntu Mono', sans-serif;
+	font-family: 'Hack', sans-serif;
 	font-size: 0.75em;
 	font-weight: 400;
 	line-height: 1.334em;
-	opacity: 0.5;
+  color: $color-blue-60;
 }
 .has-cover .post-meta {
 	color: $color-white;
@@ -958,6 +1017,25 @@ img {
 .post-excerpt p {
 	margin: 0.5em 0 0;
 }
+.post-content {
+  padding: 2em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.post-content > * {
+  min-width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
 .post-content a {
 	border-bottom: 1px solid $primary-color;
 }
@@ -965,20 +1043,13 @@ img {
 .post-content a:focus {
 	color: $primary-color;
 }
-.post-content img,
-.post-content .fluid-width-video-wrapper {
-	max-width: none;
-	width: 75%;
-	margin-left: -5%;
-}
-
 
 /* ==========================================================================
    Post Info
    ========================================================================== */
 
 .post-info {
-	margin-top: 6em;
+	margin-top: 2em;
 	overflow: hidden;
 }
 .post-share {
@@ -1023,7 +1094,7 @@ img {
 .post-tags {
 	max-width: 75%;
 	float: left;
-	font-family: 'Ubuntu Mono', sans-serif;
+	font-family: 'Hack', sans-serif;
 }
 .post-tags a {
 	display: inline-block;
@@ -1085,7 +1156,7 @@ img {
 }
 .post-author-bio {
 	padding-left: 10em;
-	font-family: 'Ubuntu Mono', sans-serif;
+	font-family: 'Hack', sans-serif;
     font-size: 0.75em;
     line-height: 1.334em;
 
@@ -1174,7 +1245,7 @@ img {
 	margin: 0;
 	padding: 0.5em 1.25em;
 	border: 1px solid $color-blue-80;
-	font-family: 'Ubuntu Mono', sans-serif;
+	font-family: 'Hack', sans-serif;
 	font-size: 0.75em;
 	line-height: 1.334em;
 	color: $color-blue-60;
@@ -1339,7 +1410,7 @@ img {
 	height: 2em;
 	margin: 0;
 	padding: 2em 0;
-	font-family: 'Ubuntu Mono', sans-serif;
+	font-family: 'Hack', sans-serif;
 }
 .pagination:after {
 	position: absolute;

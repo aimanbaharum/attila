@@ -65,7 +65,7 @@
 						<p class="post-authors-authors">{{authors separator=", "}}</p>
 					</aside>
         {{else}}
-					{{#author}}
+					{{#primary_author}}
 						<aside class="post-author">
 							<figure class="post-author-avatar avatar">
 								{{#if profile_image}}
@@ -92,11 +92,10 @@
 							</div>
 							<div class="clear"></div>
 						</aside>
-					{{/author}}
+					{{/primary_author}}
         {{/has}}
 
 			</section>
-
 
 			<section class="post-comments">
 				<a id="show-disqus" class="post-comments-activate">{{t "Show Comments"}}</a>
