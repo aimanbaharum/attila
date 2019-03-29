@@ -1,3 +1,5 @@
 .DS_store
 node_modules
 /assets
+dist/
+>>>>>>> 837c075611d96a621686d9cdb5b553c52b0bd73b
