@@ -7,6 +7,7 @@
 @import "icons";
 @import "fonts";
 @import "highlight";
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap');
 
 /* ==========================================================================
    Basics
@@ -34,7 +35,7 @@ html.menu-active,
 }
 
 body {
-	font: 400 1.7em / 1.5em 'Hack', serif;
+	font: 400 20px / 2em 'Lora', serif;
 	color: $color-blue-30;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -45,7 +46,7 @@ input,
 button,
 select,
 textarea {
-	font-family: 'Hack', sans-serif;
+	font-family: 'Lora', sans-serif;
 	transition: all ease-out 0.2s;
 }
 
@@ -117,7 +118,7 @@ ol > li:before {
 	position: absolute;
 	width: 1.5em;
 	margin-left: -2em;
-	font-family: 'Hack', sans-serif;
+	font-family: 'Lora', sans-serif;
 	font-size: 1em;
 	font-weight: 500;
 	line-height: 1.5em;
@@ -191,7 +192,7 @@ dl {
     padding-left: 30px;
 }
 dl dt {
-    font-family: 'Hack', sans-serif;
+    font-family: 'Lora', sans-serif;
   	font-weight: 500;
   	font-size: 0.75em;
   	line-height: 1.25em;
@@ -310,7 +311,7 @@ table td {
     border: 1px solid $color-gray-90;
 }
 table th {
-	font-family: 'Hack', sans-serif;
+	font-family: 'Lora', sans-serif;
 	font-weight: 500;
 	font-size: 0.75em;
 	line-height: 1.25em;
@@ -574,7 +575,7 @@ img[src$="#full"] {
 	color: $color-white;
 }
 .blog-name a {
-	text-decoration: none;
+	text-decoration: underline;
 	font-weight: inherit;
 	color: inherit;
 }
@@ -850,7 +851,7 @@ img[src$="#full"] {
 #footer {
 	position: relative;
 	z-index: 20;
-	font-family: 'Hack', sans-serif;
+	font-family: 'Lora', sans-serif;
 	line-height: 1em;
 	padding-bottom: 6em;
 }
@@ -1200,7 +1201,7 @@ img[src$="#full"] {
 }
 .post-author-bio {
 	padding-left: 10em;
-	font-family: 'Hack', sans-serif;
+	font-family: 'Lora', sans-serif;
     font-size: 0.75em;
     line-height: 1.334em;
 
@@ -1289,7 +1290,7 @@ img[src$="#full"] {
 	margin: 0;
 	padding: 0.5em 1.25em;
 	border: 1px solid $color-blue-80;
-	font-family: 'Hack', sans-serif;
+	font-family: 'Lora', sans-serif;
 	font-size: 0.75em;
 	line-height: 1.334em;
 	color: $color-blue-60;
@@ -1454,7 +1455,7 @@ img[src$="#full"] {
 	height: 2em;
 	margin: 0;
 	padding: 2em 0;
-	font-family: 'Hack', sans-serif;
+	font-family: 'Lora', sans-serif;
 }
 .pagination:after {
 	position: absolute;
